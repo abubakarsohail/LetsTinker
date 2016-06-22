@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SpringTime</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="~/Content/Styles/style.css" type="text/css" media="all" />
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="shell">
+            <!-- Logo + Top Nav -->
+            <div id="top">
+                <h1><a href="#">SpringTime</a></h1>
+                <div id="top-navigation"> Welcome
+                @{
+                    string login = (string)HttpContext.Current.Session["login"];
+                    <a href="#"><strong> @login</strong></a>
+                }
+                <span>|</span> @Html.ActionLink("Help", "Help", "Home") <span>|</span> <a href="#">Profile Settings</a> <span>|</span> 
+                @{
+                    if (HttpContext.Current.Session["login"] == null)
+                    {
+                       @Html.ActionLink("Log in", "Login", "Account")
+                        <span>|</span>
+                       @Html.ActionLink("Register", "Register", "Account")
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Log out", "Logout", "Account")
+                    }
+                }
+                </div>
+            </div>
+            <!-- End Logo + Top Nav -->
+            <!-- Main Nav -->
+            <div id="navigation">
+                <ul>
+                    <li><span>@Html.ActionLink("Dashboard", "Dashboard", "Home")</span></li>
+                    <li><span>@Html.ActionLink("New Articles", "NewArticles", "Home")</span></li>
+                    @{
+                        if ((string)HttpContext.Current.Session["login"] == "admin")
+                        { 
+                            <li><span>@Html.ActionLink("User Management", "UserManagement", "Admin")</span></li>
+                        }
+                     }
+                    <li><a href="#"><span>Photo Gallery</span></a></li>
+                    <li><a href="#"><span>Products</span></a></li>
+                    <li><a href="#"><span>Services Control</span></a></li>
+                </ul>
+            </div>
+            <!-- End Main Nav -->
+        </div>
+    </div>
+    <!-- End Header -->
+    @RenderBody()
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="shell"> <span class="left">&copy; 2010 - CompanyName</span> <span class="right"> Design by <a href="http://chocotemplates.com">Chocotemplates.com</a> </span> </div>
+    </div>
+    <!-- End Footer -->
+</body>
+</html>
