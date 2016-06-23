@@ -5,9 +5,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="7f083ff91ae44f588dce4114b9af0039" Name="Diagram1">
-        <EntityTypeShape EntityType="LetsTinkerModel.User" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="LetsTinkerModel.Article" Width="1.5" PointX="3" PointY="1.125" />
-        <EntityTypeShape EntityType="LetsTinkerModel.Comment" Width="1.5" PointX="5.25" PointY="1.25" />
+        <EntityTypeShape EntityType="LetsTinkerModel.Article" Width="1.5" PointX="3" PointY="1.375" />
+        <EntityTypeShape EntityType="LetsTinkerModel.Comment" Width="1.5" PointX="5.25" PointY="1.5" />
+        <EntityTypeShape EntityType="LetsTinkerModel.User" Width="1.5" PointX="0.75" PointY="1" />
         <AssociationConnector Association="LetsTinkerModel.FK_Article_User" />
         <AssociationConnector Association="LetsTinkerModel.FK_Comment_Article" />
         <AssociationConnector Association="LetsTinkerModel.FK_Comment_User" />
