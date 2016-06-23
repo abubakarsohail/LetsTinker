@@ -20,7 +20,7 @@
                         <h2 class="left">Current Articles</h2>
                         <div class="right">
                             <label>Search Users</label>
-                            <input type="text" class="field small-field" id="search"/>
+                            <input type="text" class="field small-field" id="search" />
                             @*<input type="submit" class="button" value="search" id="btnSearch"/>*@
                         </div>
                     </div>
@@ -33,72 +33,72 @@
                                 <th>User</th>
                                 <th width="110" class="ac">Content Control</th>
                             </tr>
-                            @{ 
-                                foreach(var i in Model)
+                            @{
+                                foreach (var i in Model)
                                 {
                                     <tr>
-                                        <td><input type="checkbox" class="checkbox"/></td>
+                                        <td><input type="checkbox" class="checkbox" /></td>
                                         <td><h3>@Html.ActionLink(i.UserName, "#", new { id = "UserName" })</h3></td>
                                         <td><a href="/Admin/Delete?UserName=@i.UserName" class="ico del">Delete</a> <a href="#" class="ico edit">Edit</a></td>
                                     </tr>
                                 }
                             }
                             @*<tr>
-                                <td><input type="checkbox" class="checkbox" /></td>
-                                <td><h3><a href="#">atique</a></h3></td>
-                                <td>12.05.09</td>
-                                <td><a href="#">Administrator</a></td>
-                                <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
-                            </tr>
-                            <tr class="odd">
-                                <td><input type="checkbox" class="checkbox" /></td>
-                                <td><h3><a href="#">azher</a></h3></td>
-                                <td>12.05.09</td>
-                                <td><a href="#">Administrator</a></td>
-                                <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="checkbox" /></td>
-                                <td><h3><a href="#">abubakar</a></h3></td>
-                                <td>12.05.09</td>
-                                <td><a href="#">Administrator</a></td>
-                                <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
-                            </tr>
-                            <tr class="odd">
-                                <td><input type="checkbox" class="checkbox" /></td>
-                                <td><h3><a href="#">huzaifa</a></h3></td>
-                                <td>12.05.09</td>
-                                <td><a href="#">Administrator</a></td>
-                                <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="checkbox" /></td>
-                                <td><h3><a href="#">yasir</a></h3></td>
-                                <td>12.05.09</td>
-                                <td><a href="#">Administrator</a></td>
-                                <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
-                            </tr>
-                            <tr class="odd">
-                                <td><input type="checkbox" class="checkbox" /></td>
-                                <td><h3><a href="#">sheedantolni</a></h3></td>
-                                <td>12.05.09</td>
-                                <td><a href="#">Administrator</a></td>
-                                <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="checkbox" /></td>
-                                <td><h3><a href="#">haroon</a></h3></td>
-                                <td>12.05.09</td>
-                                <td><a href="#">Administrator</a></td>
-                                <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
-                            </tr>
-                            <tr class="odd">
-                                <td><input type="checkbox" class="checkbox" /></td>
-                                <td><h3><a href="#">mohyudin</a></h3></td>
-                                <td>12.05.09</td>
-                                <td><a href="#">Administrator</a></td>
-                                <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
-                            </tr>*@
+                                    <td><input type="checkbox" class="checkbox" /></td>
+                                    <td><h3><a href="#">atique</a></h3></td>
+                                    <td>12.05.09</td>
+                                    <td><a href="#">Administrator</a></td>
+                                    <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td><input type="checkbox" class="checkbox" /></td>
+                                    <td><h3><a href="#">azher</a></h3></td>
+                                    <td>12.05.09</td>
+                                    <td><a href="#">Administrator</a></td>
+                                    <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="checkbox" /></td>
+                                    <td><h3><a href="#">abubakar</a></h3></td>
+                                    <td>12.05.09</td>
+                                    <td><a href="#">Administrator</a></td>
+                                    <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td><input type="checkbox" class="checkbox" /></td>
+                                    <td><h3><a href="#">huzaifa</a></h3></td>
+                                    <td>12.05.09</td>
+                                    <td><a href="#">Administrator</a></td>
+                                    <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="checkbox" /></td>
+                                    <td><h3><a href="#">yasir</a></h3></td>
+                                    <td>12.05.09</td>
+                                    <td><a href="#">Administrator</a></td>
+                                    <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td><input type="checkbox" class="checkbox" /></td>
+                                    <td><h3><a href="#">sheedantolni</a></h3></td>
+                                    <td>12.05.09</td>
+                                    <td><a href="#">Administrator</a></td>
+                                    <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="checkbox" /></td>
+                                    <td><h3><a href="#">haroon</a></h3></td>
+                                    <td>12.05.09</td>
+                                    <td><a href="#">Administrator</a></td>
+                                    <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td><input type="checkbox" class="checkbox" /></td>
+                                    <td><h3><a href="#">mohyudin</a></h3></td>
+                                    <td>12.05.09</td>
+                                    <td><a href="#">Administrator</a></td>
+                                    <td><a href="#" class="ico del">Delete</a><a href="#" class="ico edit">Edit</a></td>
+                                </tr>*@
                         </table>
                         <!-- Pagging -->
                         <div class="pagging">

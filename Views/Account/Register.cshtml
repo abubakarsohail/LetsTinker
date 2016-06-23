@@ -47,9 +47,7 @@
                     Maecenas sed diam eget risus varius bladit sit amet non
                 </p>
                 <form>
-                    <ul>
-                        
-                    </ul>
+                    <ul></ul>
                 </form>
             </div>
             <!--/#login.form-action-->
@@ -63,43 +61,43 @@
                 {
                     <ul>
                         <li>
-                            @Html.TextBoxFor(Model => Model.FirstName, new { placeholder = "First Name" , autocomplete = "off"})
+                            @Html.TextBoxFor(Model => Model.FirstName, new { placeholder = "First Name", autocomplete = "off" })
                             @Html.ValidationMessageFor(Model => Model.FirstName)
                         </li>
                         <li>
-                            @Html.TextBoxFor(Model => Model.LastName, new { @placeholder = "Last Name" , autocomplete = "off"})
+                            @Html.TextBoxFor(Model => Model.LastName, new { @placeholder = "Last Name", autocomplete = "off" })
                             @Html.ValidationMessageFor(Model => Model.LastName)
                         </li>
                         <li>
-                            @Html.TextBoxFor(Model => Model.Email, new { @placeholder = "Email" , autocomplete = "off"})
+                            @Html.TextBoxFor(Model => Model.Email, new { @placeholder = "Email", autocomplete = "off" })
                             @Html.ValidationMessageFor(Model => Model.Email)
                         </li>
                         <li>
-                            @Html.TextBoxFor(Model => Model.UserName, new { @placeholder = "Username", @id = "UserName", autocomplete = "off"})
+                            @Html.TextBoxFor(Model => Model.UserName, new { @placeholder = "Username", @id = "UserName", autocomplete = "off" })
                             @Html.ValidationMessageFor(Model => Model.UserName)
                             <div id="result"></div>
                         </li>
                         <li>
-                            @Html.TextBoxFor(Model => Model.Pass, new { @placeholder = "Password", @type = "password" , autocomplete = "off"})
+                            @Html.TextBoxFor(Model => Model.Pass, new { @placeholder = "Password", @type = "password", autocomplete = "off" })
                             @Html.ValidationMessageFor(Model => Model.Pass)
                         </li>
                         <li>
-                            @Html.TextBoxFor(Model => Model.Pass, new { @placeholder = "Confirm Password", @type = "password" , autocomplete = "off"})
+                            @Html.TextBoxFor(Model => Model.Pass, new { @placeholder = "Confirm Password", @type = "password", autocomplete = "off" })
                             @Html.ValidationMessageFor(Model => Model.Pass)
                         </li>
                         <li>
-                            @Html.TextBoxFor(Model => Model.Quest, new { @placeholder = "Security Question" , autocomplete = "off"})
+                            @Html.TextBoxFor(Model => Model.Quest, new { @placeholder = "Security Question", autocomplete = "off" })
                             @Html.ValidationMessageFor(Model => Model.Quest)
                         </li>
                         <li>
-                            @Html.TextBoxFor(Model => Model.Ans, new { @placeholder = "Answer" , autocomplete = "off"})
+                            @Html.TextBoxFor(Model => Model.Ans, new { @placeholder = "Answer", autocomplete = "off" })
                             @Html.ValidationMessageFor(Model => Model.Ans)
                         </li>
                         <li>
-                            @Html.TextBoxFor(Model => Model.ImgPath, new { type = "file"})
+                            @Html.TextBoxFor(Model => Model.ImgPath, new { type = "file" })
                         </li>
                         <li>
-                            <input type="submit" value="Sign Up" class="button"/>
+                            <input type="submit" value="Sign Up" class="button" />
                         </li>
                     </ul>
                 }

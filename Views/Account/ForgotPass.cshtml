@@ -86,8 +86,8 @@
                     To reset your password enter your email and your birthday
                     and we'll send you a link to reset your password.
                 </p>
-               @using (Html.BeginForm())
-               {
+                @using (Html.BeginForm())
+                {
                     <ul>
                         <li>
                             @Html.TextBoxFor(Model => Model.UserName, new { id = "UserName", placeholder = "Username" })
@@ -101,10 +101,10 @@
                         </li>
                         <div id="answer"></div>
                         <li>
-                            <input type="button" id="btnGetPass" value="Get Password" class="button"/>
+                            <input type="button" id="btnGetPass" value="Get Password" class="button" />
                         </li>
                     </ul>
-               }
+                }
 
             </div>
             <!--/#register.form-action-->
@@ -113,6 +113,5 @@
     <script class="cssdeck" src="~/scripts/jquery-1.10.2.min.js"></script>
 </body>
 </html>
-
 
 

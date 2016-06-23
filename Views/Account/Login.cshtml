@@ -30,7 +30,7 @@
         <div class="flat-form">
             <ul class="tabs">
                 <li>
-                    @Html.ActionLink("Login", "Login", "Account", new { @class="active"})
+                    @Html.ActionLink("Login", "Login", "Account", new { @class = "active" })
                 </li>
                 <li>
                     @Html.ActionLink("Regiser", "Register", "Account")
@@ -49,10 +49,10 @@
                 {
                     <ul>
                         <li>
-                            @Html.TextBoxFor(Model => Model.UserName, new { @placeholder = "Username"})
+                            @Html.TextBoxFor(Model => Model.UserName, new { @placeholder = "Username" })
                         </li>
                         <li>
-                            @Html.TextBoxFor(Model => Model.Pass, new { @placeholder = "Password", @type = "password"})
+                            @Html.TextBoxFor(Model => Model.Pass, new { @placeholder = "Password", @type = "password" })
                         </li>
                         <li>
                             <input type="submit" value="Login" class="button" />
@@ -108,5 +108,3 @@
     <script class="cssdeck" src="~/scripts/jquery-1.10.2.min.js"></script>
 </body>
 </html>
-
-

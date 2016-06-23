@@ -12,24 +12,25 @@
             <!-- Logo + Top Nav -->
             <div id="top">
                 <h1><a href="#">SpringTime</a></h1>
-                <div id="top-navigation"> Welcome
-                @{
-                    string login = (string)HttpContext.Current.Session["login"];
-                    <a href="#"><strong> @login</strong></a>
-                }
-                <span>|</span> @Html.ActionLink("Help", "Help", "Home") <span>|</span> <a href="#">Profile Settings</a> <span>|</span> 
-                @{
-                    if (HttpContext.Current.Session["login"] == null)
-                    {
-                       @Html.ActionLink("Log in", "Login", "Account")
-                        <span>|</span>
-                       @Html.ActionLink("Register", "Register", "Account")
+                <div id="top-navigation">
+                    Welcome
+                    @{
+                        string login = (string)HttpContext.Current.Session["login"];
+                        <a href="#"><strong> @login</strong></a>
                     }
-                    else
-                    {
-                        @Html.ActionLink("Log out", "Logout", "Account")
+                    <span>|</span> @Html.ActionLink("Help", "Help", "Home") <span>|</span> <a href="#">Profile Settings</a> <span>|</span>
+                    @{
+                        if (HttpContext.Current.Session["login"] == null)
+                        {
+                            @Html.ActionLink("Log in", "Login", "Account")
+                            <span>|</span>
+                            @Html.ActionLink("Register", "Register", "Account")
+                        }
+                        else
+                        {
+                            @Html.ActionLink("Log out", "Logout", "Account")
+                        }
                     }
-                }
                 </div>
             </div>
             <!-- End Logo + Top Nav -->
@@ -40,10 +41,10 @@
                     <li><span>@Html.ActionLink("New Articles", "NewArticles", "Home")</span></li>
                     @{
                         if ((string)HttpContext.Current.Session["login"] == "admin")
-                        { 
+                        {
                             <li><span>@Html.ActionLink("User Management", "UserManagement", "Admin")</span></li>
                         }
-                     }
+                    }
                     <li><a href="#"><span>Photo Gallery</span></a></li>
                     <li><a href="#"><span>Products</span></a></li>
                     <li><a href="#"><span>Services Control</span></a></li>
