@@ -38,7 +38,12 @@
             <div id="navigation">
                 <ul>
                     <li><span>@Html.ActionLink("Dashboard", "Dashboard", "Home")</span></li>
-                    <li><span>@Html.ActionLink("New Articles", "NewArticles", "Home")</span></li>
+                    @{
+                        if ((string)HttpContext.Current.Session["login"] != null)
+                        {
+                            <li><span>@Html.ActionLink("New Articles", "NewArticles", "Home")</span></li>
+                        }
+                    }
                     @{
                         if ((string)HttpContext.Current.Session["login"] == "admin")
                         {
